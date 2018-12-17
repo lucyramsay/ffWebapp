@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <widget version="1.0.0">
-    <name>App-Name</name>
+    <name>Boy 7</name>
     <description>
-        App-Beschreibung
+       Es handelt sich über das Buch Boy 7
     </description>
     <author>
-        Dein Name
+        Lucy Ramsay
     </author>
 
     <!-- General settings -->
