@@ -7,37 +7,47 @@ html,body{
   overflow: hidden;
   margin:0;
   padding:0;
-  background: #ffffff;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
   font-size:20px;
   text-align: center;
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 
 /* Startseite */
-.option-button{
+.restart-button{
   width: 60vw;
-  margin: 42vh 20vw;
+  margin: 4vw 20vw;
   padding: 2vw 0;
-  border: 0.75vw solid #000000;
   box-sizing: border-box;
+  border: 0.75vw solid #ffffff;
   border-radius: 1.5vw;
+  background: #000000;
+  color: #ffffff;
   font-size: 4vw;
 }
 
-.option-button:active{
-  background: #000000;
-  color:#ffffff;
+.restart-button:active{
+  background: #ffffff;
+  border-color: #000000;
+  color: #000000;
 }
 
 
-/* Seiteninhalt */
-#main-content{
+/* Spielseite */
+#player{
+  width: 20vw;
+  height: auto;
+  margin: 10vw 40vw;
+  font-size: 3vw;
+}
+
+#fields{
   position: relative;
   float: left;
   clear: left;
@@ -46,43 +56,32 @@ a {
   margin: 0;
 }
 
-
-/* Würfel-Style */
-.dice{
+.field{
   display:inline-block;
-  width: 80vw;
-  height: 80vw;
-  margin: 10vw;
+  vertical-align: top;
+  width: 25vw;
+  height: 25vw;
+  margin: 3vw;
   box-sizing: border-box;
   border:0;
   border-radius: 5vw;
-  background: #000000;
-  color:#ffffff;
-  font-size: 68vw;
-}
-
-
-/* Würfelbutton (unten) */
-#controls{
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height:auto;
-  margin: 0;
-  padding: 4vw 0;
-  background: #000000;
-}
-
-.rollButton{
-  float: left;
-  width:45vw;
-  height:15vw;
-  margin: 0 27.5vw;
-  padding-top: 3vw;
   background: #ffffff;
-  border: 0.75vw solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 1.5vw;
-  font-size:9vw;
-  line-height: 9vw;
+  color:#000000;
+  font-size: 23vw;
+}
+
+#winner{
+  position: absolute;
+  display: none; /* Das DIV 'winner' soll erst angezeigt werden, wenn das Spiel fertig ist */
+  top:0;
+  left:0;
+  float: left;
+  clear: left;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  color:#000000;
+  background: #ffffff;
+  font-size: 13vw;
+  padding: 10vw 0 0 0;
 }
